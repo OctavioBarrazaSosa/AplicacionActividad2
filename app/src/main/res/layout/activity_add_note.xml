@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AddNoteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NUEVA CATEGORÍA"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editTextCategoryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de la Categoría"
+            android:inputType="textCapSentences" />
+
+        <Button
+            android:id="@+id/buttonAddCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Categoría"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NUEVA NOTA"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editTextNoteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título de la Nota"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/editTextNoteContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contenido de la Nota"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:gravity="top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Categoría Existente:"
+            android:layout_marginTop="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/buttonSaveNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Nota"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
